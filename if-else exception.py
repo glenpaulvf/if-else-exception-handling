@@ -21,6 +21,17 @@ def my_divide3(a, b):
 	try:
 		return [x/y for x,y in zip(a,b)]
 	except:
-		print "Something's wrong with the inputs to my_divide2"
+		print "Something's wrong with the inputs to my_divide3"
+		return []
+
+# Task 4
+def my_divide4(a, b):
+	try:
+		return [x/y for x,y in zip(a,b)]
+	except ZeroDivisionError:
+		print "There is a zero in b"
+		return []
+	except TypeError:
+		print "Non-numeric data detected"
 		return []
 
