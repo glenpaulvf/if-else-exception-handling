@@ -16,3 +16,11 @@ def my_divide2(a, b):
 		print "Something's wrong with the inputs to my_divide2"
 		return []
 
+# Task 3
+def my_divide3(a, b):
+	try:
+		return [x/y for x,y in zip(a,b)]
+	except:
+		print "Something's wrong with the inputs to my_divide2"
+		return []
+
